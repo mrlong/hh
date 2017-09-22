@@ -29,6 +29,9 @@ type
     procedure FormDestroy(Sender: TObject);
     procedure FormResize(Sender: TObject);
     procedure tmr1Timer(Sender: TObject);
+    procedure chrm1BeforeContextMenu(Sender: TObject;
+      const browser: ICefBrowser; const frame: ICefFrame;
+      const params: ICefContextMenuParams; const model: ICefMenuModel);
   private
     { Private declarations }
     fFormResizer  : TFormResizer;
@@ -51,6 +54,13 @@ procedure TMainDlg.actdevetoolExecute(Sender: TObject);
 begin
   //
   chrm1.ShowDevTools();
+end;
+
+procedure TMainDlg.chrm1BeforeContextMenu(Sender: TObject;
+  const browser: ICefBrowser; const frame: ICefFrame;
+  const params: ICefContextMenuParams; const model: ICefMenuModel);
+begin
+  model.Clear;
 end;
 
 procedure TMainDlg.chrm1BeforePopup(Sender: TObject; const browser: ICefBrowser;

@@ -5838,8 +5838,8 @@ object MainDlg: TMainDlg
     DefaultUrl = 'http://www.hanghangxj.com/hhxj/index_publicPrice '
     TabOrder = 0
     Visible = False
+    OnBeforeContextMenu = chrm1BeforeContextMenu
     OnBeforePopup = chrm1BeforePopup
-    ExplicitHeight = 600
   end
   object actlst1: TActionList
     Left = 256
