@@ -7,7 +7,8 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, cefvcl,
   ceflib,
   Easysize,
-  Vcl.StdCtrls, Vcl.ExtCtrls, System.Actions, Vcl.ActnList, Vcl.Imaging.jpeg;
+  Vcl.StdCtrls, Vcl.ExtCtrls, System.Actions, Vcl.ActnList, Vcl.Imaging.jpeg,
+  Vcl.Imaging.pngimage;
 
 type
 

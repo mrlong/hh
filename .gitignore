@@ -1,0 +1,8 @@
+
+*.~1~
+*.~2~
+Win32/Release/*
+Win32/Release/cache/Cookies
+setup/Release/*
+setup/Release/cache/*.*
+*.exe
